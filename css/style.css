@@ -1,0 +1,110 @@
+:root {
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+  }
+body{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: var(--very-light-gray);
+}
+
+header, footer{
+    margin: 3em 0;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+p{
+  margin: 0;  
+}
+article{
+    position: relative;
+    width: 350px;
+    height: 250px;
+    box-shadow: 3px 6px 12px var(--grayish-blue);
+    border-radius: 6px;
+    margin: 12px;
+}
+article p{
+    text-align: left;
+    padding: 0 10%;
+}
+
+article img{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+#title{
+    color: var(--very-dark-blue);
+    font-weight: 200;
+    font-size: 2.5em;
+}
+
+#subtitle{
+    color: var(--very-dark-blue);
+    font-weight: 600;
+    font-size: 2.5em;
+}
+#description{
+    color: var(--grayish-blue);
+    display: inline-block;
+    width: 500px;
+}
+#column{
+    display: flex;
+    flex-direction: column;
+}
+#supervisor{
+    border-top: hsl(180, 62%, 55%) 3px solid;
+}
+
+#team-builder{
+    border-top: hsl(0, 78%, 62%)  3px solid;
+}
+
+#karma{
+    border-top: hsl(34, 97%, 64%) 3px solid;
+}
+
+#calculator{
+    border-top:  hsl(212, 86%, 64%) 3px solid;
+}
+.title-card{
+    font-weight: 600;
+    padding-top: 10%;
+}
+.description-card{
+    font-size: 13px;
+    color: var(--grayish-blue);
+}
+
+@media screen and (max-width: 375px){
+    #title, #subtitle{
+        font-size: 1.6em;
+    }
+    #description{
+        width: 85%;
+    }
+    main, footer{
+        display: block;
+        width: 85%;
+        margin: auto;
+    }
+    article{
+        width: 100%;
+        margin: 0;
+        height: 230px;
+        margin-bottom: 24px;
+        box-shadow: 1px 6px 12px var(--grayish-blue);
+    }
+
+}
